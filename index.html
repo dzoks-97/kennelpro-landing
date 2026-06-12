@@ -38,7 +38,6 @@ body {
   line-height: 1.6;
 }
 
-/* ===== NAV ===== */
 nav {
   position: fixed; top: 0; left: 0; right: 0; z-index: 100;
   display: flex; align-items: center; justify-content: space-between;
@@ -90,7 +89,6 @@ nav {
 
 .nav-cta:hover { background: var(--ink-2) !important; }
 
-/* ===== HERO ===== */
 .hero {
   min-height: 100vh;
   display: flex;
@@ -199,31 +197,6 @@ h1 em {
 
 .btn-secondary:hover { border-color: var(--ink); transform: translateY(-1px); }
 
-.hero-trust {
-  display: flex; align-items: center; gap: 16px;
-  margin-top: 2rem;
-}
-
-.hero-trust-text {
-  font-size: 0.8rem;
-  color: var(--muted);
-}
-
-.hero-trust-badges {
-  display: flex; gap: 8px;
-}
-
-.trust-badge {
-  background: var(--pale);
-  border: 1px solid var(--border);
-  border-radius: 6px;
-  padding: 4px 10px;
-  font-size: 0.72rem;
-  color: var(--slate);
-  font-weight: 500;
-}
-
-/* ===== HERO PHOTO ===== */
 .hero-photo-wrap {
   width: 100%;
   max-width: 1100px;
@@ -247,7 +220,6 @@ h1 em {
   background: linear-gradient(to bottom, rgba(15,25,35,0.1) 0%, transparent 30%, transparent 45%, rgba(15,25,35,0.65) 100%);
 }
 
-/* Floating cards */
 .float-card {
   position: absolute;
   background: white;
@@ -261,7 +233,6 @@ h1 em {
 .float-card-1 { bottom: 40px; left: 40px; animation-delay: 0s; }
 .float-card-2 { top: 40px; right: 40px; animation-delay: 1.5s; }
 .float-card-3 { bottom: 40px; right: 40px; animation-delay: 0.8s; }
-
 
 .hero-photo-bottom {
   position: absolute;
@@ -352,7 +323,6 @@ h1 em {
 .float-value.green { color: var(--accent); }
 .float-icon { font-size: 1.2rem; margin-bottom: 4px; }
 
-/* ===== SECTIONS ===== */
 section { padding: 6rem 8%; }
 
 .section-tag {
@@ -381,9 +351,7 @@ h2 {
   line-height: 1.75;
 }
 
-/* ===== FEATURES ===== */
 .features { background: var(--ink); }
-
 .features h2 { color: white; }
 .features .section-tag { color: var(--accent-2); }
 .features .section-lead { color: rgba(255,255,255,0.55); }
@@ -438,7 +406,6 @@ h2 {
   line-height: 1.7;
 }
 
-/* ===== HOW IT WORKS ===== */
 .how { background: var(--pale); }
 
 .how-inner {
@@ -505,93 +472,6 @@ h2 {
   overflow: hidden;
 }
 
-.how-visual::before {
-  content: '';
-  position: absolute; top: 0; left: 0; right: 0; height: 3px;
-  background: linear-gradient(90deg, var(--accent), var(--accent-2));
-}
-
-.mock-topbar {
-  display: flex; align-items: center; gap: 8px;
-  margin-bottom: 1.5rem;
-  padding-bottom: 1rem;
-  border-bottom: 1px solid var(--border);
-}
-
-.mock-dots { display: flex; gap: 6px; }
-.mock-dot { width: 10px; height: 10px; border-radius: 50%; }
-
-.mock-title {
-  margin-left: 8px;
-  font-size: 0.78rem;
-  font-weight: 600;
-  color: var(--slate);
-}
-
-.mock-tabs {
-  display: flex; gap: 4px; margin-left: auto;
-}
-
-.mock-tab {
-  font-size: 0.68rem;
-  padding: 3px 8px;
-  border-radius: 6px;
-  color: var(--muted);
-  font-weight: 500;
-  border: 1px solid var(--border);
-}
-
-.mock-tab.active { background: var(--accent-light); color: var(--accent); border-color: rgba(26,107,74,0.2); }
-
-.mock-dog-card {
-  display: flex; align-items: center; gap: 12px;
-  padding: 10px 12px;
-  border-radius: 10px;
-  border: 1px solid var(--border);
-  margin-bottom: 8px;
-  transition: background 0.15s;
-}
-
-.mock-dog-card:hover { background: var(--pale); }
-
-.mock-dog-avatar {
-  width: 38px; height: 38px;
-  border-radius: 50%;
-  display: flex; align-items: center; justify-content: center;
-  font-weight: 700; font-size: 0.8rem;
-  flex-shrink: 0;
-}
-
-.mock-dog-name { font-size: 0.82rem; font-weight: 600; color: var(--ink); }
-.mock-dog-breed { font-size: 0.7rem; color: var(--muted); }
-
-.mock-status {
-  margin-left: auto;
-  font-size: 0.65rem;
-  padding: 3px 8px;
-  border-radius: 20px;
-  font-weight: 600;
-}
-
-.mock-status.active { background: var(--accent-light); color: var(--accent); }
-.mock-status.sold { background: var(--amber-light); color: var(--amber); }
-
-.mock-stats {
-  display: grid; grid-template-columns: 1fr 1fr;
-  gap: 8px; margin-top: 16px;
-}
-
-.mock-stat {
-  background: var(--pale);
-  border-radius: 10px;
-  padding: 10px 12px;
-}
-
-.mock-stat-label { font-size: 0.65rem; color: var(--muted); margin-bottom: 2px; }
-.mock-stat-value { font-size: 1rem; font-weight: 700; color: var(--ink); }
-.mock-stat-value.green { color: var(--accent); }
-
-/* ===== PRICING ===== */
 .pricing { background: white; }
 
 .pricing-header {
@@ -700,7 +580,7 @@ h2 {
 }
 
 .plan-price sup {
-  font-size: 1.1rem;
+  font-size: 1rem;
   vertical-align: super;
   font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 500;
@@ -787,7 +667,6 @@ h2 {
   margin-top: 1.5rem;
 }
 
-/* ===== CONTACT ===== */
 .contact { background: var(--pale); }
 
 .contact-inner {
@@ -800,7 +679,6 @@ h2 {
 }
 
 .contact-info h2 { margin-bottom: 1rem; }
-
 .contact-info .section-lead { margin-bottom: 2rem; }
 
 .contact-detail {
@@ -878,7 +756,6 @@ h2 {
 .form-group textarea::placeholder { color: var(--muted); }
 
 .form-group textarea { min-height: 110px; resize: vertical; }
-
 .form-group select { appearance: none; cursor: pointer; }
 
 .form-submit {
@@ -907,7 +784,6 @@ h2 {
   font-weight: 600;
 }
 
-/* ===== FOOTER ===== */
 footer {
   background: var(--ink);
   padding: 3rem 8%;
@@ -944,7 +820,6 @@ footer {
   color: rgba(255,255,255,0.25);
 }
 
-/* ===== ANIMATIONS ===== */
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
@@ -959,7 +834,6 @@ footer {
 .hero-content > *:nth-child(4) { animation-delay: 0.4s; }
 .hero-content > *:nth-child(5) { animation-delay: 0.5s; }
 
-/* ===== RESPONSIVE ===== */
 @media (max-width: 900px) {
   .hero { padding: 7rem 5% 0; }
   .hero-photo-container { height: 300px; }
@@ -977,7 +851,6 @@ footer {
 </head>
 <body>
 
-<!-- NAV -->
 <nav>
   <a href="#" class="logo">
     <span class="logo-dot"></span>
@@ -991,7 +864,6 @@ footer {
   </ul>
 </nav>
 
-<!-- HERO -->
 <section class="hero">
   <div class="hero-content">
     <div class="hero-badge">
@@ -1004,12 +876,10 @@ footer {
     </p>
   </div>
 
-  <!-- Hero Photo -->
   <div class="hero-photo-wrap">
     <div class="hero-photo-container">
       <img src="hero-dog.jpg" alt="Breeder with dog" class="hero-photo">
       <div class="hero-photo-overlay"></div>
-      <!-- Floating Cards -->
       <div class="float-card float-card-1">
         <div class="float-icon">🐕</div>
         <div class="float-label">Active Dogs</div>
@@ -1024,7 +894,6 @@ footer {
         <div class="float-label">Show Titles</div>
         <div class="float-value green">12 this year</div>
       </div>
-      <!-- Buttons & trust on image -->
       <div class="hero-photo-bottom">
         <div class="hero-photo-actions">
           <a href="#contact" class="btn-primary-white">
@@ -1043,7 +912,6 @@ footer {
   </div>
 </section>
 
-<!-- FEATURES -->
 <section class="features" id="features">
   <div class="features-header">
     <div class="section-tag">Features</div>
@@ -1085,7 +953,6 @@ footer {
   </div>
 </section>
 
-<!-- HOW IT WORKS -->
 <section class="how" id="how">
   <div class="how-inner">
     <div>
@@ -1131,7 +998,6 @@ footer {
   </div>
 </section>
 
-<!-- PRICING -->
 <section class="pricing" id="pricing">
   <div class="pricing-header">
     <div class="section-tag">Pricing</div>
@@ -1139,72 +1005,60 @@ footer {
     <p class="section-lead">Start with a 5-day free trial. No credit card required.</p>
   </div>
 
-  <div class="pricing-toggle">
-    <button class="toggle-btn active" id="btn-monthly">Monthly</button>
-    <button class="toggle-btn" id="btn-annual" style="display:flex;align-items:center;gap:6px;">
-      Annual <span class="save-badge">Save 15%</span>
-    </button>
-  </div>
-
   <div class="pricing-grid">
     <!-- STARTER -->
     <div class="pricing-card">
       <div class="plan-tier">Starter</div>
       <div class="plan-price-wrap">
-        <div class="plan-price"><sup>€</sup><span class="price-val" data-monthly="15" data-annual="12.75">15</span></div>
+        <div class="plan-price"><span style="font-size:1.2rem;font-family:'Plus Jakarta Sans',sans-serif;font-weight:500;">RSD </span><span class="price-val">360</span></div>
       </div>
       <div class="plan-period">per month</div>
-      <div class="plan-annual-note" id="note-starter"></div>
       <div class="plan-divider"></div>
       <ul class="plan-features">
-        <li>Up to 15 dogs</li>
-        <li>Financial Report</li>
-        <li>Kennel Overview Report</li>
-        <li>2 GB photo storage</li>
+        <li>Up to 5 dogs</li>
+        <li>Kennel Overview</li>
+        <li>2 GB storage</li>
         <li>Vaccination reminders</li>
         <li>Pedigree management</li>
       </ul>
-      <a href="#contact" class="plan-cta outline">Get Started</a>
+      <a href="https://kennelprocrm.lemonsqueezy.com/checkout/buy/eb319052-52ea-4833-80ce-e2166d2fdb86" class="plan-cta outline" target="_blank">Get Started</a>
     </div>
 
     <!-- PROFESSIONAL -->
     <div class="pricing-card featured">
       <div class="plan-tier">Professional</div>
       <div class="plan-price-wrap">
-        <div class="plan-price"><sup>€</sup><span class="price-val" data-monthly="25" data-annual="21.25">25</span></div>
+        <div class="plan-price"><span style="font-size:1.2rem;font-family:'Plus Jakarta Sans',sans-serif;font-weight:500;">RSD </span><span class="price-val">700</span></div>
       </div>
       <div class="plan-period">per month</div>
-      <div class="plan-annual-note" id="note-pro"></div>
       <div class="plan-divider"></div>
       <ul class="plan-features">
-        <li>Up to 50 dogs</li>
+        <li>Up to 20 dogs</li>
         <li>All reports included</li>
-        <li>Litter Report</li>
-        <li>10 GB photo storage</li>
+        <li>5 GB storage</li>
         <li>B2B transaction system</li>
-        <li>Priority support</li>
+        <li>Support</li>
       </ul>
-      <a href="#contact" class="plan-cta solid">Get Started</a>
+      <a href="https://kennelprocrm.lemonsqueezy.com/checkout/buy/30ef393b-63b3-4f76-8253-feb65d8f9460" class="plan-cta solid" target="_blank">Get Started</a>
     </div>
 
     <!-- KENNEL -->
     <div class="pricing-card">
       <div class="plan-tier">Kennel</div>
       <div class="plan-price-wrap">
-        <div class="plan-price"><sup>€</sup><span class="price-val" data-monthly="35" data-annual="29.75">35</span></div>
+        <div class="plan-price"><span style="font-size:1.2rem;font-family:'Plus Jakarta Sans',sans-serif;font-weight:500;">RSD </span><span class="price-val">1000</span></div>
       </div>
       <div class="plan-period">per month</div>
-      <div class="plan-annual-note" id="note-kennel"></div>
       <div class="plan-divider"></div>
       <ul class="plan-features">
         <li>Unlimited dogs</li>
         <li>All reports included</li>
-        <li>Unlimited photo storage</li>
+        <li>15 GB storage</li>
         <li>B2B transaction system</li>
         <li>Priority support</li>
         <li>Early access to new features</li>
       </ul>
-      <a href="#contact" class="plan-cta outline">Get Started</a>
+      <a href="https://kennelprocrm.lemonsqueezy.com/checkout/buy/e431d44c-12dd-4a4b-aced-231e2162c62e" class="plan-cta outline" target="_blank">Get Started</a>
     </div>
   </div>
 
@@ -1213,7 +1067,6 @@ footer {
   </p>
 </section>
 
-<!-- CONTACT -->
 <section class="contact" id="contact">
   <div class="contact-inner">
     <div class="contact-info">
@@ -1247,69 +1100,68 @@ footer {
     </div>
 
     <div class="contact-form-card">
-    <form onsubmit="handleSubmit(event)">
-      <div class="form-row">
-        <div class="form-group">
-          <label>First name</label>
-          <input type="text" name="first_name" placeholder="John" required>
+      <form onsubmit="handleSubmit(event)">
+        <div class="form-row">
+          <div class="form-group">
+            <label>First name</label>
+            <input type="text" name="first_name" placeholder="John" required>
+          </div>
+          <div class="form-group">
+            <label>Last name</label>
+            <input type="text" name="last_name" placeholder="Smith" required>
+          </div>
         </div>
         <div class="form-group">
-          <label>Last name</label>
-          <input type="text" name="last_name" placeholder="Smith" required>
+          <label>Email address</label>
+          <input type="email" name="email" placeholder="you@example.com" required>
         </div>
-      </div>
-      <div class="form-group">
-        <label>Email address</label>
-        <input type="email" name="email" placeholder="you@example.com" required>
-      </div>
-      <div class="form-row">
-        <div class="form-group">
-          <label>Country code</label>
-          <input type="text" name="country_code" placeholder="+381">
-        </div>
-        <div class="form-group">
-          <label>Phone number</label>
-          <input type="tel" name="phone" placeholder="641234567">
-        </div>
-      </div>
-      <div class="form-group">
-        <label>Kennel name</label>
-        <input type="text" name="kennel_name" placeholder="Your kennel name">
-      </div>
-      <div class="form-row">
-        <div class="form-group">
-          <label>City</label>
-          <input type="text" name="city" placeholder="Belgrade">
+        <div class="form-row">
+          <div class="form-group">
+            <label>Country code</label>
+            <input type="text" name="country_code" placeholder="+381">
+          </div>
+          <div class="form-group">
+            <label>Phone number</label>
+            <input type="tel" name="phone" placeholder="641234567">
+          </div>
         </div>
         <div class="form-group">
-          <label>Country</label>
-          <input type="text" name="country" placeholder="Serbia">
+          <label>Kennel name</label>
+          <input type="text" name="kennel_name" placeholder="Your kennel name">
         </div>
-      </div>
-      <div class="form-group">
-        <label>Plan</label>
-        <select name="plan">
-          <option value="">Select a plan</option>
-          <option>Starter — €15/month</option>
-          <option>Professional — €25/month</option>
-          <option>Kennel — €35/month</option>
-          <option>Free Trial (5 days)</option>
-        </select>
-      </div>
-      <div class="form-group">
-        <label>Message (optional)</label>
-        <textarea name="message" placeholder="Tell us about your kennel..."></textarea>
-      </div>
-      <button type="submit" class="form-submit">Send Message →</button>
-      <div class="form-success" id="form-success">
-        ✓ Message sent! We'll be in touch within 24 hours.
-      </div>  
-    </form>
+        <div class="form-row">
+          <div class="form-group">
+            <label>City</label>
+            <input type="text" name="city" placeholder="Belgrade">
+          </div>
+          <div class="form-group">
+            <label>Country</label>
+            <input type="text" name="country" placeholder="Serbia">
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Plan</label>
+          <select name="plan">
+            <option value="">Select a plan</option>
+            <option>Starter — 360 RSD/month</option>
+            <option>Professional — 700 RSD/month</option>
+            <option>Kennel — 1000 RSD/month</option>
+            <option>Free Trial (5 days)</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Message (optional)</label>
+          <textarea name="message" placeholder="Tell us about your kennel..."></textarea>
+        </div>
+        <button type="submit" class="form-submit">Send Message →</button>
+        <div class="form-success" id="form-success">
+          ✓ Message sent! We'll be in touch within 24 hours.
+        </div>
+      </form>
     </div>
   </div>
 </section>
 
-<!-- FOOTER -->
 <footer>
   <div class="footer-logo">
     <span class="logo-dot"></span>
@@ -1325,31 +1177,6 @@ footer {
 </footer>
 
 <script>
-let isAnnual = false;
-
-function setMonthly() {
-  isAnnual = false;
-  document.getElementById('btn-monthly').classList.add('active');
-  document.getElementById('btn-annual').classList.remove('active');
-  updatePrices();
-}
-
-function setAnnual() {
-  isAnnual = true;
-  document.getElementById('btn-annual').classList.add('active');
-  document.getElementById('btn-monthly').classList.remove('active');
-  updatePrices();
-}
-
-function updatePrices() {
-  document.querySelectorAll('.price-val').forEach(function(el) {
-    el.textContent = isAnnual ? el.dataset.annual : el.dataset.monthly;
-  });
-  document.getElementById('note-starter').textContent = isAnnual ? 'Billed €153/year — save €27' : '';
-  document.getElementById('note-pro').textContent = isAnnual ? 'Billed €255/year — save €45' : '';
-  document.getElementById('note-kennel').textContent = isAnnual ? 'Billed €357/year — save €63' : '';
-}
-
 function handleSubmit(e) {
   e.preventDefault();
   const form = e.target;
@@ -1375,9 +1202,6 @@ function handleSubmit(e) {
 }
 
 window.addEventListener('DOMContentLoaded', function() {
-  document.getElementById('btn-monthly').addEventListener('click', setMonthly);
-  document.getElementById('btn-annual').addEventListener('click', setAnnual);
-
   document.querySelectorAll('a[href^="#"]').forEach(function(a) {
     a.addEventListener('click', function(e) {
       e.preventDefault();
